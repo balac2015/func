@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "lib": [
+            "ES2017",
+            "ES2015.Core",
+            "DOM"
+        ]
+    },
+    "include": [
+        "./src/*"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "func",
+  "version": "1.0.0",
+  "description": "封装项目中常使用的工具方法",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balac2015/func.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balac2015/func/issues"
+  },
+  "homepage": "https://github.com/balac2015/func#readme"
+}
