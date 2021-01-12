@@ -1,5 +1,5 @@
 # func
-封装项目中常使用的工具方法
+常用代码片段集合
 
 ## 使用 Usage
 
@@ -35,3 +35,6 @@ $ npm run build
 - rollup-plugin-babel
 - rollup-plugin-node-resolve
 - rollup-plugin-uglify
+
+参考：
+[utility](https://github.com/node-modules/utility)
