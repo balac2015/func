@@ -1,6 +1,6 @@
-import resolve from 'rollup-plugin-node-resolve'
-// import babel from 'rollup-plugin-babel'
-import { uglify } from 'rollup-plugin-uglify'
+import resolve from 'rollup-plugin-node-resolve';
+import babel from 'rollup-plugin-babel';
+import { uglify } from 'rollup-plugin-uglify';
 
 export default {
     input: 'lib/index.ts',
@@ -31,10 +31,14 @@ export default {
         }
     ],
     plugins: [
-        resolve(),
-        // babel({
-        //     exclude: 'node_modules/**'
-        // }),
-        uglify()
+        resolve({
+            extensions: ['.js', '.ts'],
+            modulesOnly: true
+        }),
+        babel({
+            exclude: 'node_modules/**',
+            extensions: ['.js', '.ts'],
+        }),
+        // uglify()
     ]
 }

@@ -20,4 +20,5 @@
  * @part system - Node.js 上常用的工具函数库，比如通配符、文件监听、网络库等
  */
 
- console.log('测试')
+export * from './array';
+export * from './number';

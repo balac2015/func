@@ -28,6 +28,7 @@ $ npm run build
 ```
 
 依赖模块：
+- [ava](https://github.com/avajs/ava-docs/blob/master/zh_CN/readme.md)
 - @babel
 - docdash
 - jest
