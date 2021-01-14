@@ -1,6 +1,36 @@
 'use strict';
 
 /**
+ * 返回一个空函数
+ * 
+ * @return {Function}
+ * @ublic
+ */
+export function noop() {};
+
+/**
+ * 获取函数 func 的参数名称
+ * 
+ * @param {Function} func 
+ * @param {Boolean} [useCache] 默认为 true
+ * @return {Array} names
+ */
+export function getParamNames(func, cache): [] {
+    if (typeof func !== 'function') {
+        throw new Error('The "func" must be a function. Received type');
+    }
+
+    cache = cache !== false;
+    if (cache && func.__cache_names) {
+        return func.__cache_names;
+    }
+    var str = func.toString();
+    var names = str.slice(str.indexOf('(') + 1, str.indexOf(')')).match(/([^\s,]+)/g) || [];
+    func.__cache_names = names;
+    return names;
+}
+
+/**
  * 将传入的函数柯里化
  * @param fn 
  */

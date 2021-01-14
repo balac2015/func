@@ -27,12 +27,15 @@ export function randomSlice(arr: any[], num: number): any[] {
 };
 
 /**
- * 从数组中删除一个已存在的元素
+ * 按照 index 从数组中删除一个已存在的元素
  * 
  * @param arr 
  * @param index 
+ * @return {Function} 返回删除后的数组
+ * 
+ * sliceOne([1, 2, 3], -2) => [2, 3]
  */
-export function spliceOne(arr: any[], index: number): any[] {
+export function spliceIndex(arr: any[], index: number): any[] {
     if (index < 0) {
         index = arr.length + index;
 
