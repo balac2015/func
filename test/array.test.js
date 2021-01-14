@@ -30,32 +30,3 @@ describe('randomSlice() 应该返回一个子数组', () => {
         expect(arr).toEqual(expect.arrayContaining(subs));
     });
 });
-
-describe('spliceIndex() should work', () => {
-    it('spliceIndex 指定的下标在数组长度范围内', () => {
-        expect([2, 3]).toEqual(spliceIndex([1, 2, 3], 0));
-        expect([1, 3]).toEqual(spliceIndex([1, 2, 3], 1));
-        expect([1, 2]).toEqual(spliceIndex([1, 2, 3], 2));
-
-        expect([2, 3]).toEqual(spliceIndex([1, 2, 3], -0));
-        expect([1, 2]).toEqual(spliceIndex([1, 2, 3], -1));
-        expect([1, 3]).toEqual(spliceIndex([1, 2, 3], -2));
-        expect([2, 3]).toEqual(spliceIndex([1, 2, 3], -3));
-    });
-    
-    it('spliceIndex 指定的下标超出数组长度范围内', () => {
-        expect([1, 2, 3]).toEqual(spliceIndex([1, 2, 3], 3));
-        expect([1, 2, 3]).toEqual(spliceIndex([1, 2, 3], 4));
-        expect([1, 2, 3]).toEqual(spliceIndex([1, 2, 3], 5));
-
-        expect([1, 2, 3]).toEqual(spliceIndex([1, 2, 3], -4));
-        expect([1, 2, 3]).toEqual(spliceIndex([1, 2, 3], -5));
-    });
-
-    it('spliceIndex 特殊数组参数', () => {
-        expect([]).toEqual(spliceIndex([1], 0));
-        expect([1]).toEqual(spliceIndex([1], 1));
-        expect([]).toEqual(spliceIndex([], 0));
-        expect([]).toEqual(spliceIndex([], 100));
-    });
-});
