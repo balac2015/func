@@ -1,5 +1,9 @@
 
 /**
+ * @author balac
+ * @description 自用工具类函数，包含常用的自定义工具类函数
+ * @homePage https://github.com/balac2015/func.git
+ * 
  * @obj
  * @desc 工具实例，参考 lodash 模块划分
  * @part array - 适用于数组类型，比如填充数据、查找元素、数组分片等操作
@@ -23,3 +27,12 @@
 export * from './array';
 export * from './number';
 export * from './function';
+
+// pattern 设计模式
+// ./pattern/
+
+// data-structure-and-algorithms 数据结构与算法
+// ./data-structure-and-algorithms
+
+// functional 常见功能函数封装
+// ./functional
